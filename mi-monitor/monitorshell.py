@@ -17,6 +17,10 @@ class MonitorShell():
             time.sleep(refresh/1000)
 
     def update_cpu_data(self, nuevo_valor):
+        """
+        Actualiza la información del la cpu
+        :return:
+        """
         # Elimina el primer valor de la lista
         self.cpu = self.cpu[1:]
         self.cpu.append(nuevo_valor)
