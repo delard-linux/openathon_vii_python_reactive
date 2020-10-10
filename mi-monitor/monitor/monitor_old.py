@@ -3,7 +3,7 @@ from PyQt5.QtWidgets import QMainWindow, QWidget, QLabel, QVBoxLayout
 import pyqtgraph as pg
 from util import Extractor
 
-class Monitor(QMainWindow):
+class MonitorOld(QMainWindow):
 
     def __init__(self, refresh):
 
