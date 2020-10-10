@@ -1,3 +1,6 @@
+"""
+Comentario de modulo para que detecte el cambio
+"""  
 import pyqtgraph as pg
 from PyQt5 import QtCore
 from PyQt5.QtWidgets import QMainWindow, QVBoxLayout, QWidget, QLabel
@@ -7,6 +10,9 @@ from util import Extractor
 class Monitor(QMainWindow):
 
     def __init__(self, refresh):
+        """
+        Para que salte conflicto
+        """        
         super(Monitor, self).__init__()
 
         widget = QWidget()
