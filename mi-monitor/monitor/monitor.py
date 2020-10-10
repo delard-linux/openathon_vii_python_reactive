@@ -1,5 +1,6 @@
 """
 Comentario de modulo para que detecte el cambio
+esto es un cambio desde 2nd_created_remotelly sobre main
 """  
 import pyqtgraph as pg
 from PyQt5 import QtCore
