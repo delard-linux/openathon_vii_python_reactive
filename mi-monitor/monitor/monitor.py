@@ -8,6 +8,9 @@ from PyQt5.QtWidgets import QMainWindow, QVBoxLayout, QWidget, QLabel
 from util import Extractor
 
 class Monitor(QMainWindow):
+"""
+Clase Monitor de momento sin programacion reactiva
+"""
 
     def __init__(self, refresh):
         """
