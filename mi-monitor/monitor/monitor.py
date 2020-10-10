@@ -1,5 +1,6 @@
 """
 Comentario de modulo para que detecte el cambio
+AQUI METO UN CAMBIO!! para que desde created_remotelly sobre main desde el VSCode
 """  
 import pyqtgraph as pg
 from PyQt5 import QtCore
