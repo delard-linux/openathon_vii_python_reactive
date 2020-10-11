@@ -76,6 +76,7 @@ class Monitor(QMainWindow):
     def update_memory_data(self, event):
         """
         Actualiza la información del gráfico de memoria
+        Esta linea se ha metido para ver diferencias !!
         :return:
         """
         # Remove the first X element and add a new value
