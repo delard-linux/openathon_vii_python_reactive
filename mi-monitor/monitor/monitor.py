@@ -1,7 +1,7 @@
 """
 Comentario de modulo para que detecte el cambio
 AQUI METO UN CAMBIO!! para que desde created_remotelly sobre main desde el VSCode
-"""  
+"""
 import pyqtgraph as pg
 from PyQt5 import QtCore
 from PyQt5.QtWidgets import QMainWindow, QVBoxLayout, QWidget, QLabel
@@ -9,14 +9,13 @@ from PyQt5.QtWidgets import QMainWindow, QVBoxLayout, QWidget, QLabel
 from util import Extractor
 
 class Monitor(QMainWindow):
-"""
-Clase Monitor de momento sin programacion reactiva
-"""
-
+    """
+    Clase Monitor de momento sin programacion reactiva
+    """
     def __init__(self, refresh):
         """
         Para que salte conflicto
-        """        
+        """
         super(Monitor, self).__init__()
 
         widget = QWidget()
