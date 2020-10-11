@@ -1,7 +1,8 @@
 """
 Comentario de modulo para que detecte el cambio
 AQUI METO UN CAMBIO!! para que desde created_remotelly sobre main desde el VSCode
-"""
+esto es un cambio desde 2nd_created_remotelly sobre main
+"""  
 import pyqtgraph as pg
 from PyQt5 import QtCore
 from PyQt5.QtWidgets import QMainWindow, QVBoxLayout, QWidget, QLabel
