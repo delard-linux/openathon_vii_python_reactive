@@ -1,5 +1,6 @@
 """
 Comentario de modulo para que detecte el cambio
+AQUI METO UN CAMBIO!! para que desde created_remotelly sobre main desde el VSCode
 esto es un cambio desde 2nd_created_remotelly sobre main
 """  
 import pyqtgraph as pg
@@ -9,14 +10,13 @@ from PyQt5.QtWidgets import QMainWindow, QVBoxLayout, QWidget, QLabel
 from util import Extractor
 
 class Monitor(QMainWindow):
-"""
-Clase Monitor de momento sin programacion reactiva
-"""
-
+    """
+    Clase Monitor de momento sin programacion reactiva
+    """
     def __init__(self, refresh):
         """
         Para que salte conflicto
-        """        
+        """
         super(Monitor, self).__init__()
 
         widget = QWidget()
@@ -77,6 +77,7 @@ Clase Monitor de momento sin programacion reactiva
     def update_memory_data(self, event):
         """
         Actualiza la información del gráfico de memoria
+        Esta linea se ha metido para ver diferencias !!
         :return:
         """
         # Remove the first X element and add a new value
