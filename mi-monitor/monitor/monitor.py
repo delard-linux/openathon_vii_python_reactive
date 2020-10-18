@@ -6,6 +6,7 @@ esto es un cambio desde 2nd_created_remotelly sobre main
 import pyqtgraph as pg
 from PyQt5 import QtCore
 from PyQt5.QtWidgets import QMainWindow, QVBoxLayout, QWidget, QLabel
+from rx.subject import Subject
 
 from util import Extractor
 
@@ -18,6 +19,10 @@ class Monitor(QMainWindow):
         Para que salte conflicto
         """
         super(Monitor, self).__init__()
+
+        # SE incluye el observable
+        self.events_cpu = Subject()
+        self.events_mem = Subject()
 
         widget = QWidget()
 
@@ -111,10 +116,13 @@ class Monitor(QMainWindow):
         """
         Método que recupera el valor de la CPU y envía un evento de forma reactiva
         """
-        self.update_cpu_data(self.extractor.get_cpu_percent())
+        # Publica un nuevo valor en el Observable de valores de la CPU
+        self.events_cpu.on_next(self.extractor.get_cpu_percent())
 
     def get_memory_data(self):
         """
         Método que recupera el valor de la memoria y envía un evento de forma reactiva
         """
-        self.update_memory_data(self.extractor.get_virtual_memory_percent())
+        # Publica un nuevo valor en el Observable de valores de la CPU
+        self.events_mem.on_next(self.extractor.get_virtual_memory_percent())
+
